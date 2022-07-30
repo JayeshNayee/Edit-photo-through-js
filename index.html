@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image editing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="main">
+        <div class="container">
+            <div class="main-outer">
+                <div class="main-left">
+                    <aside>
+                        <h3>Image Filters</h3>
+                        <form id="slider-form">
+                            <p>
+                                <label for="gs">Grayscale</label>
+                                 <input type="range" name="gs" id="gs" min="" max="100" value="0" class="slider">
+                            </p>
+
+                            <p>
+                                <label for="Blur">Blur</label>
+                                 <input type="range" name="Blur" id="Blur" min="" max="100" value="0" class="slider">
+                            </p>
+
+                            <p>
+                                <label for="Hue-Rotate">Hue-Rotate</label>
+                                 <input type="range" name="Hue-Rotate" id="Hue-Rotate" min="" max="100" value="0" class="slider">
+                            </p>
+
+                            <p>
+                                <label for="Sepia">Sepia</label>
+                                 <input type="range" name="Sepia" id="Sepia" min="" max="100" value="0" class="slider">
+                            </p>
+
+                            <button type="reset">Reset</button>
+                        </form>
+                    </aside>
+                </div>
+                <div class="main-right">
+                    <form id="myform">
+                        <input type="text" name="" id="onlineurl" placeholder="Image url">
+                       <button type="submit">Change Image</button>
+                    </form>
+                    <div class="img-area">
+                        <img src="image/free-nature-images.jpg" alt="" id="targetimg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/main.js/index.js"></script>
+</body>
+</html>
